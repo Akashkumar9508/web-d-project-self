@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.logo {
+    width: 225px;
+    display: flex;
+
+
+
+}
+
+.logo .logoicon i {
+    color: #fff;
+    ;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-right: 7px;
+
+
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+.nav a {
+
+    position: relative;
+    font-size: 1.3rem;
+
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 12px;
+
+}
+
+.nav a::after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    transform: scale(0);
+    transition: .5s;
+
+}
+
+.nav a:hover::after {
+    transform: scaleX(1);
+
+}
+
+/*main section is started*/
+.mainbox {
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    background-image: url(login.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px 70px 0px 90px;
+}
+
+.mainbox .content {
+
+    color: #fff;
+    width: 620px;
+    margin-left: 20px;
+
+
+}
+
+.content h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+
+}
+
+.content h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.content h3 {
+    padding-bottom: 25px;
+}
+
+.content .button {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #FFF;
+    background-color: transparent;
+    border: 3px solid #fff;
+    outline: none;
+    border-radius: 40px;
+    padding: 5px 15px;
+    transition: .5s;
+}
+
+.content .button:hover {
+    background:linear-gradient(90deg, black ,blue);
+    box-shadow: 0px 8px 10px rgb(21, 91, 220);
+    color:#fff;
+
+
+}
+
+/* form started from here */
+
+.mainbox .full-login{
+   position: relative;
+    width: 400px;
+    margin-right: 20px;
+}
+.full-login h2{
+    font-size: 2.3rem;
+    font-weight: 900;
+    color:#fff;
+    text-align: center;
+
+}
+.full-login .form .input-box{
+    width: 100%;
+    position: relative;
+    height: 50px;
+    margin-top: 40px;
+}
+.input-box .icon {
+    color: #fff;
+    position: absolute;
+    top:15px;
+    left:15px;
+}
+.input-box input{
+    width: 100%;
+    height:100%;
+    outline: none;
+    background: transparent;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0px 40px ;
+}
+.input-box label{
+    position :absolute;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    left:45px;
+    top:50%;
+    transform: translateY(-50%);
+    transition: .5s;
+    pointer-events: none;
+
+}
+.input-box input:focus~label,
+.input-box input:focus~label{
+    font-size: 1rem;
+    left: 17px;
+    top:-14px;
+}
+.remember-forget{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    height:29px;
+    display: flex;
+}
+.remember-forget label{
+display: flex;
+padding-left: 9px;
+
+}
+.remember-forget label p{
+    padding: 5px;
+    color: #Fff;
+}
+.remember-forget a{
+    color: #fff;
+    text-decoration:none;
+    border-radius: 40px;
+    transition: .5s;
+    
+}
+.remember-forget a:hover{
+     border-bottom:2px solid  #fff ;
+
+}
+.btn{
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 40px;
+    font-size: 1.5rem;
+    font-weight:600;
+    color: #ffff;
+    outline: none;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    background:linear-gradient(90deg, black ,blue);
+    box-shadow: 0px 8px 10px rgb(21, 91, 220);
+    
+}
+
+
+.resister{
+    color:#fff;
+    padding: 0px 10px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;margin-top: 5px;
+}
+.resister a{
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: .5s;
+    
+}
+.resister a:hover{
+    border-bottom: 3px solid white;
+}
+
+
+
+
